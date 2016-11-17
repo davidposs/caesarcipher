@@ -77,9 +77,12 @@ def main():
 
     args = parser.parse_args()
     if args.encode:
-        ikey = int(args.key)
+        integer_key = int(args.key)
+        if (integer_key < 0):
+            print "Key must be > 0"
+            exit(1)
         encrypted_file = open('encrypted.txt', 'w')
-        encrypted_file.write(encode(args.filename, ikey))
+        encrypted_file.write(encode(args.filename, integer_key))
         print "encrypted.txt file created"
     elif args.decode:
         decoded_file = open('decrypted.txt', 'w')
