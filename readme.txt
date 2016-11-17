@@ -3,7 +3,7 @@ Caesar Cipher Program
 Usage: $python caesar.py ([-d] | [-e] [key]) [filename]
 
 -d: - decrpyts a specified file encrypted with a caesar cipher by brute forcing
-    - creates a file called decrpyted.txt that stores all possibile outcomes
+    - creates a file called decrpyted.txt that stores all possible outcomes
 
 -e: - encrypts a specified file with a caesar cipher, with inputted key
     - creates a file called encrypted.txt that can be decrypted with -d
